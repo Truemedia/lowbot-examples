@@ -1,0 +1,35 @@
+{
+  "name": "lowbot-examples",
+  "version": "0.1.0",
+  "description": "Example implementations of lowbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Truemedia/lowbot-examples.git"
+  },
+  "keywords": [
+    "lowbot",
+    "example",
+    "implementation",
+    "prototype"
+  ],
+  "author": "Wade Penistone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Truemedia/lowbot-examples/issues"
+  },
+  "homepage": "https://github.com/Truemedia/lowbot-examples#readme",
+  "dependencies": {
+    "basic-skillset": "^0.1.7",
+    "eduir": "^1.0.1",
+    "intent-desire": "^1.0.0",
+    "lowbot-alexa": "^0.1.2",
+    "lowbot-discord": "^0.1.1",
+    "lowbot-slack": "^0.1.1",
+    "lowbot-terminal": "^0.1.1",
+    "payment-provider": "^0.1.0"
+  }
+}
