@@ -27,7 +27,7 @@
     "eduir": "^1.0.1",
     "intent-desire": "^1.0.0",
     "lowbot-alexa": "^0.1.2",
-    "lowbot-discord": "^0.1.1",
+    "lowbot-discord": "^0.2.0",
     "lowbot-slack": "^0.1.1",
     "lowbot-terminal": "^0.1.1",
     "payment-provider": "^0.1.0"
