@@ -1,10 +1,11 @@
 // Lib
-const LowBot = require('./../lowbot/src/index');
+const MindStack = require('./../mindstack/src/index');
 
 // Classifiers
-const IntentClassification = require('eduir');
-// const DesireClassification = require('intent-desire');
-const DesireClassification = require('./../../recognisers/intent-desire/src/index');
+// const IntentClassification = require('eduir');
+const IntentClassification = require('rasa-classifier');
+const DesireClassification = require('intent-desire');
+// const DesireClassification = require('./../../recognisers/intent-desire/src/index');
 
 // Adapters
 const alexa = require('lowbot-alexa');
@@ -14,21 +15,20 @@ const terminal = require('lowbot-terminal');
 
 // Skills
 const intents = require('./build/intents.json').intents;
-const BasicSkill = require('./../../skillsets/basic-skill/src/index');
-// const BasicSkill = require('basic-skillset');
-const StoreSkill = require('./../../skillsets/store-skillset/src/index');
-// const BasicSkill = require('basic-skillset');
+// const BasicSkill = require('./../../skillsets/basic-skill/src/index');
+const BasicSkill = require('basic-skillset');
+// const StoreSkill = require('./../../skillsets/store-skillset/src/index');
 
 // Personalities
 const chars = require('./chars.json');
 
 // Payment providers
-const iou = require('./../../payment/iou-pp/src/index');
+// const iou = require('./../../payment/iou-pp/src/index');
 
 /**
   * Bot instance
   */
-let botInstance = new LowBot(intents)
+let botInstance = new MindStack(intents)
   /**
     * Classifiers
     */
@@ -46,7 +46,7 @@ let botInstance = new LowBot(intents)
     * Skills
     */
   .addSkill(BasicSkill) // Basic skill
-  .addSkill(StoreSkill) // Store skill
+  // .addSkill(StoreSkill) // Store skill
   /**
     * Services
     */
@@ -59,7 +59,7 @@ let botInstance = new LowBot(intents)
   /**
     * Payment providers
     */
-  .addPaymentProvider(iou)
+  // .addPaymentProvider(iou)
   /**
     * Build and launch
     */
